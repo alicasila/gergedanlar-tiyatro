@@ -4,28 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gergedanlar - Ana Sayfa</title>
-    <!-- Favicon (Sekme Logosu) -->
     <link rel="icon" type="image/jpeg" href="logo.jpeg">
-    
-    <!-- CSS Bağlantısı (style.css olduğundan emin ol) -->
     <link rel="stylesheet" href="style.css">
-    
-    <!-- İkonlar -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
-    <!-- Fontlar -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
-        <!-- Logo ve Yazı Grubu -->
-        <a href="index.html" class="logo">
-            <img src="logo.jpeg" alt="Gergedanlar Logo">
-            <span>GERGEDANLAR</span>
-        </a>
+        <a href="index.html" class="logo"><img src="logo.jpeg" alt="Logo"> <span>GERGEDANLAR</span></a>
         <nav>
             <ul>
                 <li><a href="index.html" class="active">Ana Sayfa</a></li>
@@ -36,56 +23,42 @@
         </nav>
     </header>
 
-    <!-- Ana Görsel Alanı (CSS'de arkaplan.jpeg bağlıdır) -->
-    <section class="hero">
+    <!-- index-hero sınıfı eklendi (Resmi getiren bu) -->
+    <section class="hero index-hero">
         <h1>GERGEDANLAR</h1>
         <p>İnsanlığınızı ne kadar koruyabilirsiniz?</p>
-        <a href="about.html" class="btn">Hikayeyi Keşfet</a>
+        <!-- Buton Linki about.html olarak düzeltildi -->
+        <a href="about.html" class="btn">HİKAYEYİ KEŞFET</a>
     </section>
 
     <div class="container">
-        <h2 style="font-family: var(--font-heading); text-align: center; margin-bottom: 1rem;">Biletler Yalnızca BİLETİX'TE</h2>
-        <p style="text-align: center; color: #aaa; font-size: 1.2rem;">Absürd tiyatronun başyapıtı, modern bir yorumla sahnede.</p>
+        <h2 style="text-align: center; font-family: var(--font-heading);">Biletler Yalnızca BİLETİX'TE</h2>
+        <p style="text-align: center; color: #aaa; margin-top: 1rem;">Absürd tiyatronun başyapıtı, modern bir yorumla sahnede.</p>
     </div>
 
-    <!-- Alt Panel (Footer) -->
     <footer>
         <div class="footer-container">
-            <!-- 1. Sütun: Marka -->
-            <div class="footer-col footer-brand">
+            <div class="footer-col">
                 <h3>DÖNÜŞÜM TİYATROSU</h3>
-                <div class="social-links">
-                    <a href="https://www.instagram.com/donusumtiyatrosu/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://x.com/tiyatrodonusum" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="mailto:donusumtiyatrosu@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <div class="social-links" style="display: flex; gap: 1rem; margin-top: 1rem;">
+                    <a href="https://www.instagram.com/donusumtiyatrosu/" target="_blank" style="font-size: 1.5rem; color: white;"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/tiyatrodonusum" target="_blank" style="font-size: 1.5rem; color: white;"><i class="fa-brands fa-x-twitter"></i></a>
                 </div>
             </div>
-
-            <!-- 2. Sütun: Menü -->
-            <div class="footer-col footer-menu">
-                <h4>Menü</h4>
-                <ul>
-                    <li><a href="index.html">Ana Sayfa</a></li>
-                    <li><a href="about.html">Oyun Hakkında</a></li>
-                    <li><a href="team.html">Ekibimiz</a></li>
-                    <li><a href="contact.html">İletişim</a></li>
+            <div class="footer-col">
+                <h4 style="color: var(--accent-color); margin-bottom: 1rem;">Menü</h4>
+                <ul style="display: flex; flex-direction: column; gap: 0.5rem;">
+                    <li><a href="index.html" style="color: #aaa;">Ana Sayfa</a></li>
+                    <li><a href="about.html" style="color: #aaa;">Oyun Hakkında</a></li>
+                    <li><a href="team.html" style="color: #aaa;">Ekibimiz</a></li>
+                    <li><a href="contact.html" style="color: #aaa;">İletişim</a></li>
                 </ul>
             </div>
-
-            <!-- 3. Sütun: İletişim -->
-            <div class="footer-col footer-contact">
-                <h4>Bize Ulaşın</h4>
-                <div class="contact-details">
-                    <p>Telefon: +90 (555) 000 00 00</p>
-                    <p>E-posta: donusumtiyatrosu@gmail.com</p>
-                </div>
-                <form class="newsletter-form" action="#">
-                    <input type="email" placeholder="E-posta Adresiniz" required>
-                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
-                </form>
+            <div class="footer-col">
+                <h4 style="color: var(--accent-color); margin-bottom: 1rem;">İletişim</h4>
+                <p style="color: #aaa;">donusumtiyatrosu@gmail.com</p>
             </div>
         </div>
-
         <div class="footer-bottom">
             <p>&copy; 2026 Dönüşüm Tiyatrosu & Gergedanlar. Tüm Hakları Saklıdır.</p>
         </div>
